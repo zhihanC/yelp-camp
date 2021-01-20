@@ -77,6 +77,11 @@ app.delete('/campgrounds/:id', async (req, res) => {
   res.redirect('/campgrounds');
 });
 
+//404 Not Found
+app.use((req, res) => {
+  res.status(404).send('NOT FOUND!');
+});
+
 // Server is listening
 app.listen(3000, () => {
   console.log('Serving on port 3000');
