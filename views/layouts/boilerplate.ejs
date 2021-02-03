@@ -13,7 +13,7 @@
   </head>
   <!-- adding vh-100 to the body makes the footer stay on the bottom for the new page but messes up the navbar for all pages except the new page -->
   <!-- bug only appears on Safari but not Chrome -->
-  <body class="d-flex flex-column">
+  <body class="d-flex flex-column vh-100">
     <%-include('../partials/navbar')%>
     <main class="container mt-5"><%-body%></main>
     <%-include('../partials/footer')%>
